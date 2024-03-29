@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background: #55d6aa;
+    height: 4rem;
+}
+
+nav {
+    flex: 1;
+    background: violet;
+}
+
+ul {
+    float: right;
+    background: purple;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    height: 1rem;
+    margin: 0 5px;
+}
+
+a {
+    background: pink;
+    height: 64px;
+}
+
+.logo {
+    float: left;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    background: red;
+    width: 15%;
+}
+
+main {
+    background: green;
+    width: 85%;
+}
+
+footer {
+    height: 6rem;
+    background: gray;
+}
