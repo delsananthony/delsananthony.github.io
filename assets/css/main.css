@@ -1,64 +1,82 @@
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html,
-body,
-* {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 
-header {
-    background: #55d6aa;
-    height: 4rem;
-}
-
-nav {
-    flex: 1;
-    background: violet;
-}
-
-ul {
-    float: right;
-    background: purple;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-li {
-    height: 1rem;
-    margin: 0 5px;
-}
-
-a {
-    background: pink;
-    height: 64px;
-}
-
-.logo {
-    float: left;
+body {
+    font-family: 'Poppins', sans;
 }
 
 .container {
-    width: 100%;
+    max-width: 920px;
+    margin-inline: auto;
+}
+
+section {
+    padding-block: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.site-header {
+    padding-block: .8rem;
+}
+
+.navbar {
+    min-width: 920px;
+    background: #FAFAFA;
+    top: 1rem;
+    position: fixed;
+    z-index: 99;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px #aaaaaa;
+    border-radius: 25px;
+    padding-inline: 16px;
 }
 
-aside {
-    background: red;
-    width: 15%;
+.navbar ul {
+     list-style-type: none;
+     display: flex;
+     gap: 2rem;
 }
 
-main {
-    background: green;
-    width: 85%;
+.project-list {
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
-footer {
-    height: 6rem;
-    background: gray;
+.project-list li {
+    background: hsla(0, 0%, 86%, .2);
+    padding: 2rem;
+    border-radius: .5rem;
+    min-height: 18.75rem;
+}
+
+.site-footer {
+    padding-bottom: 2rem;
+}
+
+.site-footer p {
+    text-align: center;
+}
+
+.tech-stack-list {
+    padding: 1.2rem;
+    margin-top: 3rem;
+    background: hsla(0, 0%, 86%, .2);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-radius: .8rem;
+    gap: 1.2rem;
+}
+
+.tech-stack-list li {
+    text-align: center;
 }
